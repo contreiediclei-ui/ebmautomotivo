@@ -1,4 +1,4 @@
-# HM Centro Automotivo — Deploy (GitHub + Vercel)
+# EBM Centro Automotivo — Deploy (GitHub + Vercel)
 
 ## Estrutura modular (igual Joninha / M3)
 
@@ -28,14 +28,14 @@ A proteção real é **login + regras**:
 
 | Arquivo | Função |
 |---|---|
-| `firestore.rules` | Fecha o banco; só usuário logado lê/grava dados HM |
+| `firestore.rules` | Fecha o banco; só usuário logado lê/grava dados EBM |
 | `storage.rules` | Só logado no Storage |
 | `firebase.json` | Liga as regras ao Firebase CLI |
 | `SEGURO-FIREBASE.txt` | Passo a passo no Console |
 
 ### Publicar as regras (obrigatório)
 
-1. [Firebase Console](https://console.firebase.google.com/) → projeto `hmautomotivo-f29dc`
+1. [Firebase Console](https://console.firebase.google.com/) → projeto `EBMautomotivo-f29dc`
 2. **Firestore → Regras** → cole `firestore.rules` → **Publicar**
 3. **Storage → Regras** → cole `storage.rules` → **Publicar**
 4. **Authentication** → e-mail/senha ativo + usuário da oficina
@@ -49,8 +49,8 @@ Com as regras, **só quem fez login** acessa `hm_automotivo_base`, atendimentos,
 
 **Forma mais fácil:** duplo clique em **`SUBIR GITHUB.bat`**
 
-- **Repositório:** https://github.com/netikis/HMAUTOMOTIVO  
-- **Site:** https://hmautomotivo.vercel.app  
+- **Repositório:** [https://github.com/contreiediclei-ui/EBMAUTOMOTIVO)  
+- **Site:** https://EBMautomotivo.vercel.app  
 
 ## Segredos
 
